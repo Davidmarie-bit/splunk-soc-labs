@@ -18,3 +18,15 @@ Learn core Splunk search commands used by SOC Analysts to explore logs, identify
 
 ## Status
 In progress
+
+## Step 1: Verify Data Is Coming Into Splunk
+
+### Purpose
+Confirm that Splunk is receiving logs by querying its internal index.
+
+### SPL Command
+```spl
+index=_internal
+```
+
+
