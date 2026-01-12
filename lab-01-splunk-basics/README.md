@@ -30,9 +30,9 @@ Confirm that Splunk is receiving logs.
 index=_internal
 | timechart count
 ### Result
-- Internal Splunk logs were successfully queried.
-- Event volume over time was visualized using `timechart`.
-- Consistent log ingestion was observed across the selected time range.
+Internal Splunk logs were successfully queried.
+Event volume over time was visualized using timechart.
+Consistent log ingestion was observed across the selected time range.
 
 ## Step 2: Count Total Events
 
