@@ -66,3 +66,24 @@ Internal Splunk logs were successfully filtered by the splunkd sourcetype.
 A total of 518,706 events were recorded for this sourcetype within the selected time range.
 
 This demonstrates how SOC analysts narrow investigations by focusing on specific internal log sources.
+
+## Step 4: Identify Most Frequent Internal Log Messages
+
+### Purpose
+Identify the most common internal log messages to understand frequent system activity within Splunk.
+
+### SPL Command
+
+```spl
+index=_internal
+| top limit=10 _raw
+```
+
+### Result
+The most frequent internal log messages were identified from the internal Splunk index.
+
+The message STARTED_SUPERVISOR_BOOTSTRAP was the most common event, indicating repeated internal service initialization activity.
+
+Other recurring messages included SSL warnings, HTTP requests, and telemetry events, reflecting normal background operations within Splunk.
+
+This step demonstrates how SOC analysts identify recurring patterns and high-frequency events during log analysis.
