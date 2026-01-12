@@ -19,8 +19,6 @@ Confirm that Splunk is receiving logs by querying the internal index.
 
 ### SPL Command
 
-### SPL Command
-
 ```spl
 index=_internal
 | timechart count
