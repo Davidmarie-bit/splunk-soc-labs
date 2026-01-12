@@ -88,11 +88,6 @@ Other recurring messages included SSL warnings, HTTP requests, and telemetry eve
 
 This step demonstrates how SOC analysts identify recurring patterns and high-frequency events during log analysis.
 
-## Step 5: Identify Most Active Sourcetypes
-
-### Purpose
-Identify which internal Splunk sourcetypes generate the highest volume of events to understand where most system activity originates.
-
 ### Screenshot
 ![Step 4 - Top Raw Events](screenshots/step-04-top-raw.png)
 
