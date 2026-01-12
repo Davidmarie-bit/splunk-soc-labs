@@ -47,3 +47,22 @@ index=_internal
 A total of 728,402 events were recorded in the internal index for the selected time range.
 
 This confirms active and continuous log ingestion into Splunk.
+
+## Step 3: Analyze Internal Logs by Sourcetype
+
+### Purpose
+Identify and analyze specific internal log sources by grouping events according to their sourcetype.
+
+### SPL Command
+
+```spl
+index=_internal sourcetype=splunkd
+| stats count by sourcetype
+```
+
+### Result
+Internal Splunk logs were successfully filtered by the splunkd sourcetype.
+
+A total of 518,706 events were recorded for this sourcetype within the selected time range.
+
+This demonstrates how SOC analysts narrow investigations by focusing on specific internal log sources.
