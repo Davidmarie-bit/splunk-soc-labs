@@ -87,3 +87,6 @@ The message STARTED_SUPERVISOR_BOOTSTRAP was the most common event, indicating r
 Other recurring messages included SSL warnings, HTTP requests, and telemetry events, reflecting normal background operations within Splunk.
 
 This step demonstrates how SOC analysts identify recurring patterns and high-frequency events during log analysis.
+
+### Screenshot
+![Step 4 - Top Raw Events](screenshots/step-04-top-raw.png)
