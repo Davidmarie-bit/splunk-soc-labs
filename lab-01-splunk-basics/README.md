@@ -111,3 +111,23 @@ The results show that the splunkd sourcetype generates the highest number of int
 Other high-volume sourcetypes such as mongod, splunkd_access, and splunkd_ui_access represent database operations and user interactions with the Splunk web interface.
 
 This step demonstrates how SOC analysts identify dominant log sources to prioritize monitoring, performance analysis, and troubleshooting.
+
+## Step 6: Analyze Event Trends Over Time
+
+### Purpose
+
+Analyze internal Splunk event volume over time to identify trends, spikes, or abnormal behavior that may indicate system activity, restarts, or performance issues.
+
+### SPL Command
+
+```spl
+index=_internal
+| timechart count
+```
+
+### Result
+The time-based visualization shows a relatively consistent volume of internal events across the selected 24-hour period, indicating stable Splunk system activity.
+
+Minor fluctuations and short spikes were observed, which are consistent with normal background processes such as indexing activity, scheduled tasks, and internal service operations.
+
+This analysis demonstrates how SOC analysts use time-series data to detect abnormal behavior, performance issues, or potential incidents through trend monitoring.
