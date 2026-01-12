@@ -88,5 +88,31 @@ Other recurring messages included SSL warnings, HTTP requests, and telemetry eve
 
 This step demonstrates how SOC analysts identify recurring patterns and high-frequency events during log analysis.
 
+## Step 5: Identify Most Active Sourcetypes
+
+### Purpose
+Identify which internal Splunk sourcetypes generate the highest volume of events to understand where most system activity originates.
+
 ### Screenshot
 ![Step 4 - Top Raw Events](screenshots/step-04-top-raw.png)
+
+## Step 5: Identify Most Active Sourcetypes
+
+### Purpose
+
+Identify which internal Splunk sourcetypes generate the highest volume of events to understand where most system activity originates.
+
+### SPL Command
+
+```spl
+index=_internal
+| stats count by sourcetype
+| sort - count
+```
+
+### Result
+The results show that the splunkd sourcetype generates the highest number of internal events, indicating core Splunk daemon activity.
+
+Other high-volume sourcetypes such as mongod, splunkd_access, and splunkd_ui_access represent database operations and user interactions with the Splunk web interface.
+
+This step demonstrates how SOC analysts identify dominant log sources to prioritize monitoring, performance analysis, and troubleshooting.
