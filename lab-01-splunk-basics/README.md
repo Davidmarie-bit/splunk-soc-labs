@@ -18,9 +18,14 @@ In progress
 Confirm that Splunk is receiving logs by querying the internal index.
 
 ### SPL Command
+
+### SPL Command
+
 ```spl
 index=_internal
 | timechart count
+```
+
 ### Result
 Internal Splunk logs were successfully queried.
 
@@ -34,9 +39,12 @@ Consistent log ingestion was observed across the selected time range
 Determine the total number of events in the internal Splunk index.
 
 ### SPL Command
+
 ```spl
 index=_internal
 | stats count
+```
+
 ### Result
 A total of 728,402 events were recorded in the internal index for the selected time range.
 
