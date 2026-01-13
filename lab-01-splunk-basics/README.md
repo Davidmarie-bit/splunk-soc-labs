@@ -131,3 +131,6 @@ The time-based visualization shows a relatively consistent volume of internal ev
 Minor fluctuations and short spikes were observed, which are consistent with normal background processes such as indexing activity, scheduled tasks, and internal service operations.
 
 This analysis demonstrates how SOC analysts use time-series data to detect abnormal behavior, performance issues, or potential incidents through trend monitoring.
+
+### Screenshot
+![Step 6 - Internal Events Timechart](screenshots/step-06-timechart-count.png)
